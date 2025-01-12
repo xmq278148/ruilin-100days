@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>熊睿霖的百天记录</title>
+    <!-- Swiper轮播图 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- 顶部区域 -->
+    <header>
+        <div class="title-container">
+            <div class="title-line">
+                <h1>熊睿霖</h1>
+                <div class="subtitle">百天记录</div>
+            </div>
+            <div class="date-info">
+                <p class="lunar-date">甲辰年腊月十三日</p>
+                <p class="solar-date">2025年1月12日</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- 轮播图区域 -->
+    <div class="swiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="./images/1.jpg" alt="熊睿霖照片1"></div>
+            <div class="swiper-slide"><img src="./images/4.jpg" alt="熊睿霖照片4"></div>
+            <div class="swiper-slide"><img src="./images/5.jpg" alt="熊睿霖照片5"></div>
+            <div class="swiper-slide"><img src="./images/6.jpg" alt="熊睿霖照片6"></div>
+            <div class="swiper-slide"><img src="./images/7.jpg" alt="熊睿霖照片7"></div>
+            <div class="swiper-slide"><img src="./images/8.jpg" alt="熊睿霖照片8"></div>
+            <div class="swiper-slide"><img src="./images/9.jpg" alt="熊睿霖照片9"></div>
+            <div class="swiper-slide"><img src="./images/10.jpg" alt="熊睿霖照片10"></div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+    </div>
+
+    <!-- 我们的故事 -->
+    <section class="story">
+        <h2>我们的故事</h2>
+        <p>这是熊睿霖成长的100天，记录下每一个精彩瞬间...</p>
+    </section>
+
+    <!-- 照片展示区 -->
+    <section class="gallery">
+        <h2>精彩瞬间</h2>
+        <div class="photo-grid">
+            <!-- 照片将通过JavaScript动态添加 -->
+        </div>
+    </section>
+
+    <!-- 成长里程碑 -->
+    <section class="timeline">
+        <h2>成长里程碑</h2>
+        <div class="timeline-items">
+            <div class="timeline-item">
+                <div class="date">2024年10月4日</div>
+                <div class="content">第一次见面</div>
+                <div class="photo">
+                    <img src="./成长里程碑图片/1.jpg" alt="第一次见面">
+                </div>
+                <div class="description">欢迎来到这个世界，我们的小天使！</div>
+            </div>
+            <div class="timeline-item">
+                <div class="date">2024年10月</div>
+                <div class="content">月子中的小睿霖</div>
+                <div class="photo">
+                    <img src="./成长里程碑图片/2.jpg" alt="月子中的小睿霖">
+                </div>
+                <div class="description">在妈妈的悉心照顾下健康成长</div>
+            </div>
+            <div class="timeline-item">
+                <div class="date">2024年11月</div>
+                <div class="content">二月龄的小睿霖</div>
+                <div class="photo">
+                    <img src="./成长里程碑图片/3.jpg" alt="二月龄的小睿霖">
+                </div>
+                <div class="description">每天都在快乐地成长</div>
+            </div>
+            <div class="timeline-item">
+                <div class="date">2024年12月</div>
+                <div class="content">三月龄的小睿霖</div>
+                <div class="photo">
+                    <img src="./成长里程碑图片/4.jpg" alt="三月龄的小睿霖">
+                </div>
+                <div class="description">越来越可爱的小天使</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 留言区 -->
+    <section class="guestbook">
+        <h2>留言祝福</h2>
+        <div class="admin-login">
+            <button id="adminLoginBtn" class="admin-btn">👤</button>
+        </div>
+        <div class="message-container">
+            <div class="messages">
+                <!-- 留言将在这里动态添加 -->
+            </div>
+            <form id="messageForm">
+                <div class="input-group">
+                    <span class="input-icon">👤</span>
+                    <input type="text" placeholder="您的名字" required>
+                </div>
+                <div class="input-group">
+                    <span class="input-icon">💝</span>
+                    <textarea placeholder="写下您的祝福..." required></textarea>
+                </div>
+                <button type="submit">
+                    <span class="button-icon">✨</span>
+                    送上祝福
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- 音乐播放器 -->
+    <div class="music-player">
+        <audio id="bgMusic" loop autoplay preload="auto">
+            <source src="./music/background.flac" type="audio/flac">
+            <source src="./music/background.mp3" type="audio/mp3">
+            <source src="./music/background.ogg" type="audio/ogg">
+        </audio>
+        <button id="musicToggle" class="music-btn">⏸</button>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html> 
